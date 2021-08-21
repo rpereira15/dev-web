@@ -33,6 +33,12 @@ public class PersonController {
         return ResponseEntity.ok(PersonRepresentation.ListaPerson.from(this.personService.getListaPerson(predicate)));
     }
 
+
+
+
+
+
+
     @GetMapping
     @RequestMapping("{id}")
     public ResponseEntity<PersonRepresentation.Detalhes> getPerson(@PathVariable("id") Integer id) {
